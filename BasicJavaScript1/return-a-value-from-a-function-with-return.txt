@@ -1,0 +1,5 @@
+function timesFive (number) {
+  number*=5;
+  return number; 
+}
+var answer = timesFive(8);
