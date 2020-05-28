@@ -1,0 +1,11 @@
+function rangeOfNumbers(startNum, endNum) {
+  if(startNum>endNum) {
+    return [];
+  }
+  else {
+    var constArr = rangeOfNumbers(startNum+1,endNum);
+    constArr.unshift(startNum);
+    return constArr;
+  }
+};
+//console.log(rangeOfNumbers(1,5));
